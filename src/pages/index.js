@@ -1,20 +1,58 @@
 import React from 'react';
-import { Link } from 'gatsby';
-
 import Layout from '../components/layout';
-import Image from '../components/image';
+import './index.css';
+import tom from '../images/tom.jpg';
+import fua from '../images/fua.jpg';
+import rungs from '../images/rungs.jpeg';
+import Item from '../components/Item';
 import SEO from '../components/seo';
 
-const IndexPage = () => (
-    <Layout>
-        <SEO title="Home" />
-        <h1>Hi people</h1>
-        <p>Welcome to your new Gatsby site.</p>
-        <p>Now go build something great.</p>
-        <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-            <Image />
-        </div>
-    </Layout>
-);
-
-export default IndexPage;
+export default function Home() {
+    return (
+        <Layout>
+            <SEO title="Home" />
+            <div className="app">
+                <div className="header">
+                    <h1>
+                        <span>
+                            FANCYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+                        </span>
+                    </h1>
+                    <div className="about">
+                        <div>
+                            <span>
+                                Eurorack modules and radical electronic music
+                                <span role="img" aria-label="scream">
+                                    😱😱😱
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                Find us on <a href="https://fancyyyyy.bandcamp.com/">Bandcamp</a>{' '}
+                                and <a href="https://twitter.com/fancyyyyylabel">Twitter</a>
+                            </span>
+                        </div>
+                        <div>
+                            <span>SOON - Rung Divisions V2 + MORE</span>
+                        </div>
+                    </div>
+                </div>
+                <div className="content">
+                    <Item
+                        img={tom}
+                        artist="Tom Mudd"
+                        title="Brass Cultures"
+                        url="https://fancyyyyy.bandcamp.com/album/brass-cultures"
+                    />
+                    <Item
+                        img={rungs}
+                        title="Rung Divisions"
+                        url="https://www.fancysynthesis.net/"
+                    />
+                    <Item img={fua} title="Fua" url="https://fancyyyyy.bandcamp.com/album/fua" />
+                </div>
+            </div>
+        </Layout>
+    );
+}

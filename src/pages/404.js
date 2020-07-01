@@ -1,14 +1,39 @@
-import React from 'react';
+import { useEffect } from 'react';
+import { navigate } from 'gatsby';
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
+export default () => {
+    useEffect(() => {
+        navigate('/');
+    }, []);
+    return null;
+};
 
-const NotFoundPage = () => (
-    <Layout>
-        <SEO title="404: Not found" />
-        <h1>NOT FOUND</h1>
-        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-    </Layout>
-);
+// import React from 'react';
+// import Layout from '../components/layout';
+// import SEO from '../components/seo';
+// import './index.css';
 
-export default NotFoundPage;
+// const NotFoundPage = () => (
+//     <Layout>
+//         <SEO title="404: Not found" />
+//         <div className="app">
+//             <div className="header">
+//                 <h1>
+//                     <span>
+//                         FANCYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+//                     </span>
+//                 </h1>
+//                 <div className="about">
+//                     <span>
+//                         Page not found{' '}
+//                         <span role="img" aria-label="crying">
+//                             😢😢😢
+//                         </span>
+//                     </span>
+//                 </div>
+//             </div>
+//         </div>
+//     </Layout>
+// );
+
+// export default NotFoundPage;
