@@ -17,7 +17,7 @@ a:hover {
 }
 
 .app {
-    background: rgba(255, 140, 140);
+    background: rgba(255, 130, 130);
     min-height: 100vh;
     font-size: xx-large;
     display: grid;
