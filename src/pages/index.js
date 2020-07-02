@@ -33,9 +33,6 @@ export default function Home() {
                                 and <a href="https://twitter.com/fancyyyyylabel">Twitter</a>
                             </span>
                         </div>
-                        <div>
-                            <span>SOON - Rung Divisions V2 + MORE</span>
-                        </div>
                     </div>
                 </div>
                 <div className="content">

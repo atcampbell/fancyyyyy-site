@@ -14,10 +14,11 @@ a {
 a:hover {
     color: white;
     background: rgba(60, 60, 60);
+    font-size: larger;
 }
 
 .app {
-    background: rgba(255, 130, 130);
+    background: rgba(57, 255, 20);
     min-height: 100vh;
     font-size: xx-large;
     display: grid;
@@ -42,7 +43,7 @@ a:hover {
 
 .about {
     font-size: x-large;
-    color: white;
+    color: rgba(60, 60, 60);
     padding-bottom: 20px;
     display: grid;
     justify-items: center;
