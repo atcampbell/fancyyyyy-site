@@ -17,26 +17,22 @@ export default function Home() {
                 <div className="header-container">
                     <div className="header">
                         <h1>
-                            <span>
-                                FANCYYYYY
-                            </span>
+                            <span>FANCYYYYY</span>
                         </h1>
                     </div>
-                    {/* <div className="header-link">twitter</div>
-                    <div className="header-link">bandcamp</div> */}
                     <div className="header-link">
                         <span>
-                            <a href="https://fancyyyyy.bandcamp.com/">bandcamp</a>
+                            <a href="https://fancyyyyy.bandcamp.com/">Bandcamp</a>
                         </span>
                     </div>
                     <div className="header-link">
                         <span>
-                            <a href="https://twitter.com/fancyyyyylabel">twitter</a>
+                            <a href="https://twitter.com/fancyyyyylabel">Twitter</a>
                         </span>
                     </div>
                 </div>
-                {/* <div className="about">
-                    <div>
+                <div className="about">
+                    <div className="blurb">
                         <span>
                             Eurorack modules and radical electronic music
                             <span role="img" aria-label="scream">
@@ -44,15 +40,18 @@ export default function Home() {
                             </span>
                         </span>
                     </div>
-                    <div>
+                    <div className="blurb-links">
                         <span>
-                            Find us on <a href="https://fancyyyyy.bandcamp.com/">Bandcamp</a> and{' '}
+                            <a href="https://fancyyyyy.bandcamp.com/">Bandcamp</a>{' '}
                             <a href="https://twitter.com/fancyyyyylabel">Twitter</a>
                         </span>
                     </div>
-                </div> */}
+                    <div>
+                        <span>Available:</span>
+                    </div>
+                </div>
                 <div className="content">
-                    <Item
+                    {/* <Item
                         img={marcin}
                         artist="Marcin Pietruzewski"
                         title="The New Pulsar Generator Recordings"
@@ -63,7 +62,7 @@ export default function Home() {
                         artist="Phil Julian"
                         title="Carrier Dynamics"
                         url="https://fancyyyyy.bandcamp.com/"
-                    />
+                    /> */}
                     <Item
                         img={tom}
                         artist="Tom Mudd"
