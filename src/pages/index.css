@@ -1,14 +1,14 @@
 span {
-    display: inline-block;
+    /* display: inline-block; */
     background: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+    /* box-shadow: 0 2px 0 rgba(0, 0, 0, 0.07); */
 }
 
 a {
     text-decoration: none;
     color: rgba(60, 60, 60);
-    padding: 0.5rem;
-    background: rgba(255, 255, 255, 0.8);
+    /* padding: 0.5rem; */
+    /* background: rgba(255, 255, 255, 0.8); */
 }
 
 a:hover {
@@ -18,9 +18,9 @@ a:hover {
 }
 
 .app {
-    background: rgba(57, 255, 20);
+    background: linear-gradient(rgb(255, 200, 200), rgb(200, 255, 200));
     min-height: 100vh;
-    font-size: xx-large;
+    font-size: x-large;
     display: grid;
     gap: 20px;
     grid-template-rows: auto 1fr;
@@ -28,9 +28,27 @@ a:hover {
     padding-bottom: 50px;
 }
 
+.header-container {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    /* background: rgba(255, 255, 255, 0.8); */
+    background: white;
+    border-bottom: 3px solid black;
+    align-items: center;
+    gap: 20px;
+}
+
 .header {
-    overflow: hidden;
     padding-left: 20px;
+}
+
+.header-link a {
+    margin-right: 20px;
+    padding: 1rem;
 }
 
 .header span {
@@ -39,6 +57,11 @@ a:hover {
 
 .header h1 {
     font-style: italic;
+}
+
+.header a {
+    color: rgba(60, 60, 60);
+    /* padding: 1rem; */
 }
 
 .about {
@@ -54,6 +77,7 @@ a:hover {
     background: none;
     display: inline-block;
     box-shadow: none;
+    padding: 1rem;
 }
 
 .about div {
@@ -66,12 +90,14 @@ a:hover {
     grid-template-columns: 1fr 1fr;
     padding-left: 20px;
     padding-right: 20px;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
 }
 
 .item {
     display: grid;
     position: relative;
     grid-template-columns: 1fr minmax(500px, 4fr) 1fr;
+    /* grid-template-rows: 1fr auto; */
 }
 
 .item img {
@@ -92,6 +118,7 @@ a:hover {
     font-size: larger;
     color: white;
     background: rgba(60, 60, 60);
+    /* z-index: -1; */
 }
 
 .contentText {
@@ -122,7 +149,7 @@ a:hover {
     }
 
     .app {
-        font-size: xx-large;
+        font-size: x-large;
     }
 
     .about {
