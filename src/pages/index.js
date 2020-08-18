@@ -56,13 +56,13 @@ export default function Home() {
                         artist="Marcin Pietruzewski"
                         title="The New Pulsar Generator Recordings"
                         url="https://fancyyyyy.bandcamp.com/"
-                    />
+                    /> */}
                     <Item
                         img={phil}
                         artist="Phil Julian"
                         title="Carrier Dynamics"
-                        url="https://fancyyyyy.bandcamp.com/"
-                    /> */}
+                        url="https://fancyyyyy.bandcamp.com/album/carrier-dynamics"
+                    />
                     <Item
                         img={tom}
                         artist="Tom Mudd"
