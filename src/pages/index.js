@@ -56,7 +56,7 @@ export default function Home() {
                 <div className="content">
                     <Item
                         img={marcin}
-                        artist="Marcin Pietruzewski"
+                        artist="Marcin Pietruszewski"
                         title="The New Pulsar Generator Recordings"
                         url="https://fancyyyyy.bandcamp.com/"
                     />
