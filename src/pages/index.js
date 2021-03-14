@@ -40,9 +40,6 @@ export default function Home() {
                             </span>
                         </span>
                     </div>
-                    <div>
-                        <span>nuPg coming October 2020</span>
-                    </div>
                     <div className="blurb-links">
                         <span>
                             <a href="https://fancyyyyy.bandcamp.com/">Bandcamp</a>{' '}
