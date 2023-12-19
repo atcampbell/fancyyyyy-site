@@ -6,6 +6,8 @@ import fua from '../images/fua.jpg';
 import rungs from '../images/rungs.jpeg';
 import marcin from '../images/marcin.png';
 import phil from '../images/phil.png';
+import rungsv2 from '../images/rungsv2.jpg';
+import guitarcultures from '../images/guitarcultures.jpg';
 import Item from '../components/Item';
 import SEO from '../components/seo';
 
@@ -31,26 +33,35 @@ export default function Home() {
                         </span>
                     </div>
                 </div>
-                <div className="about">
-                    <div className="blurb">
-                        <span>
-                            Eurorack modules and radical electronic music
-                            <span role="img" aria-label="scream">
-                                😱😱😱
-                            </span>
-                        </span>
-                    </div>
-                    <div className="blurb-links">
-                        <span>
-                            <a href="https://fancyyyyy.bandcamp.com/">Bandcamp</a>{' '}
-                            <a href="https://twitter.com/fancyyyyylabel">Twitter</a>
-                        </span>
-                    </div>
-                    <div>
-                        <span>Available:</span>
-                    </div>
-                </div>
+                {/*<div className="about">*/}
+                {/*    <div className="blurb">*/}
+                {/*        <span>*/}
+
+                {/*        </span>*/}
+                {/*    </div>*/}
+                {/*    <div className="blurb-links">*/}
+                {/*        <span>*/}
+                {/*            <a href="https://fancyyyyy.bandcamp.com/">Bandcamp</a>{' '}*/}
+                {/*            <a href="https://www.fancysynthesis.net/">Synths</a>{' '}*/}
+                {/*            <a href="https://twitter.com/fancyyyyylabel">Twitter</a>*/}
+                {/*        </span>*/}
+                {/*    </div>*/}
+                {/*    <div>*/}
+                {/*        <span>Available:</span>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
                 <div className="content">
+                    <Item
+                        img={rungsv2}
+                        title="Rung Divisions"
+                        url="https://www.fancysynthesis.net/"
+                    />
+                    <Item
+                        img={guitarcultures}
+                        artist="Tom Mudd"
+                        title="Guitar Cultures"
+                        url="https://tommudd.bandcamp.com/album/guitar-cultures"
+                    />
                     <Item
                         img={marcin}
                         artist="Marcin Pietruszewski"
